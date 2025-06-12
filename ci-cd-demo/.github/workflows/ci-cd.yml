@@ -28,6 +28,11 @@ jobs:
 
       - name: Run tests
         run: |
+          pip install pytest
+          pytest test_main.py
+
+      - name: Run main script
+        run: |
           python src/main.py
 
       - name: Deploy
