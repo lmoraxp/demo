@@ -8,4 +8,4 @@ def test_main_prints_hello_ci_cd(monkeypatch):
     monkeypatch.setattr(sys, 'stdout', captured_output)
     main.main()
     output = captured_output.getvalue().strip()
-    assert output == "Hello, interviewers!"
+    assert output == "Hello, Gearset!"
